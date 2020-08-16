@@ -81,9 +81,11 @@ def summary():
 
 #------------------------------------------------------------
 # delete the buggy
-#   don't want DELETE here, because we're anticipating
-#   there always being a record to update (because the
-#   student needs to change that!)
+#   Be careful!
+#   If you're tackling task 3-DEL then this code is a starting
+#   place... but it almost certainly doesn't do what you want!
+#   ...you'll need to understand and modify the code to be more
+#   selective about what it's actually doing.
 #------------------------------------------------------------
 @app.route('/delete', methods = ['POST'])
 def delete_buggy():
