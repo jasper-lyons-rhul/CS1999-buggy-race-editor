@@ -62,9 +62,10 @@ def edit_buggy():
 
 #------------------------------------------------------------
 # get JSON from current record
-#   this is still probably right, but we won't be
-#   using it because we'll be dipping diectly into the
-#   database
+#  This reads the buggy record from the database, turns it
+#  into JSON format (excluding any empty values), and returns
+#  it. There's no .html template here because it's *only* returning
+#  the data, so in effect jsonify() is rendering the data.
 #------------------------------------------------------------
 @app.route('/json')
 def summary():
