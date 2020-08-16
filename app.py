@@ -53,12 +53,12 @@ def show_buggies():
   return render_template("buggy.html", buggy = record)
 
 #------------------------------------------------------------
-# a page for displaying the buggy
+# a placeholder page for editing the buggy: you'll need
+# to change this when you tackle task 2-EDIT
 #------------------------------------------------------------
-@app.route('/new')
+@app.route('/edit')
 def edit_buggy():
   return render_template("buggy-form.html")
-
 
 #------------------------------------------------------------
 # get JSON from current record
